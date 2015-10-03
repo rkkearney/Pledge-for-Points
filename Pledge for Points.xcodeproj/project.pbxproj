@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA1A0291BC074EC00031518 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA1A0281BC074EC00031518 /* CoreLocation.framework */; };
 		B41AEE341BBF64020057CC6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE331BBF64020057CC6A /* main.m */; };
 		B41AEE371BBF64020057CC6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE361BBF64020057CC6A /* AppDelegate.m */; };
 		B41AEE3A1BBF64020057CC6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE391BBF64020057CC6A /* ViewController.m */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AA1A0281BC074EC00031518 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B41AEE2F1BBF64020057CC6A /* Pledge for Points.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pledge for Points.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41AEE331BBF64020057CC6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B41AEE351BBF64020057CC6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA1A0291BC074EC00031518 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 		B41AEE261BBF64020057CC6A = {
 			isa = PBXGroup;
 			children = (
+				7AA1A0281BC074EC00031518 /* CoreLocation.framework */,
 				B41AEE311BBF64020057CC6A /* Pledge for Points */,
 				B41AEE4B1BBF64020057CC6A /* Pledge for PointsTests */,
 				B41AEE561BBF64020057CC6A /* Pledge for PointsUITests */,
@@ -526,6 +530,7 @@
 				B41AEE5E1BBF64020057CC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B41AEE5F1BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				B41AEE611BBF64020057CC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B41AEE621BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				B41AEE641BBF64020057CC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
