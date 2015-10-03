@@ -9,11 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label;
-- (IBAction)mybutton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *mybutton;
-@property (weak, nonatomic) IBOutlet UITextField *textbox;
-
+- (IBAction)drivingSwitch:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *pledgeLabel;
 
 @end
 
@@ -22,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,9 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)mybutton:(id)sender {
-    [self.label sizeToFit];
-    self.label.text = self.textbox.text;
-    
+
+- (IBAction)drivingSwitch:(id)sender {
 }
 @end

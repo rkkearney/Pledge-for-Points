@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XXb-CA-8oe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pledge-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Pledge" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,42 +17,187 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snf-Zj-n6R">
-                                <rect key="frame" x="279" y="280" width="74" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PLEDGE2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xfc-1X-l9Z">
+                                <rect key="frame" x="-14" y="-46" width="640" height="663"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZGp-xM-f4v">
+                                <rect key="frame" x="247" y="313" width="51" height="31"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="drivingSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="T1L-p6-iuM"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Savings ON." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLZ-7z-ohf">
+                                <rect key="frame" x="75" y="398" width="187" height="46"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87e-aC-biU">
-                                <rect key="frame" x="277" y="332" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="mybutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ser-81-Rud"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-gv-KdX">
-                                <rect key="frame" x="252" y="389" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone OFF." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFs-hM-vfJ">
+                                <rect key="frame" x="75" y="359" width="180" height="44"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-dO-qvR">
+                                <rect key="frame" x="185" y="171" width="163" height="64"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwl-7B-CAV">
+                                <rect key="frame" x="154" y="158" width="50" height="27"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pledge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDT-B8-3Ul">
+                                <rect key="frame" x="0.0" y="101" width="213" height="62"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="41"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the Pledge?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXP-Uw-tEQ">
+                                <rect key="frame" x="75" y="495" width="221" height="33"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLICK TO DRIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewp-bB-udH">
+                                <rect key="frame" x="75" y="317" width="138" height="24"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="87e-aC-biU" firstAttribute="top" secondItem="snf-Zj-n6R" secondAttribute="bottom" constant="22" id="34i-H3-hCt"/>
-                            <constraint firstItem="snf-Zj-n6R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fpx-Av-kW9"/>
-                            <constraint firstItem="87e-aC-biU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="of0-tw-Z43"/>
-                            <constraint firstItem="snf-Zj-n6R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSl-Tq-Yma"/>
+                            <constraint firstItem="QDT-B8-3Ul" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="36I-c7-gaa"/>
+                            <constraint firstItem="Bwl-7B-CAV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="138" id="7SS-D2-iX2"/>
+                            <constraint firstItem="yXP-Uw-tEQ" firstAttribute="leading" secondItem="ewp-bB-udH" secondAttribute="leading" id="BZ1-4C-YMa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QDT-B8-3Ul" secondAttribute="bottom" constant="388" id="Fe2-di-wx5"/>
+                            <constraint firstItem="VLZ-7z-ohf" firstAttribute="top" secondItem="EFs-hM-vfJ" secondAttribute="bottom" constant="-5" id="G54-me-cM7"/>
+                            <constraint firstItem="EFs-hM-vfJ" firstAttribute="leading" secondItem="ewp-bB-udH" secondAttribute="leading" id="Id1-KQ-KxB"/>
+                            <constraint firstItem="EFs-hM-vfJ" firstAttribute="top" secondItem="ewp-bB-udH" secondAttribute="bottom" constant="49" id="MDe-oB-1T3"/>
+                            <constraint firstItem="d2a-dO-qvR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="Mpu-3t-Qp0"/>
+                            <constraint firstItem="ZGp-xM-f4v" firstAttribute="leading" secondItem="ewp-bB-udH" secondAttribute="trailing" constant="34" id="Ofp-eR-HNW"/>
+                            <constraint firstItem="yXP-Uw-tEQ" firstAttribute="top" secondItem="VLZ-7z-ohf" secondAttribute="bottom" constant="36" id="UaL-h8-i2I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yXP-Uw-tEQ" secondAttribute="bottom" constant="23" id="aDB-mp-27R"/>
+                            <constraint firstItem="Bwl-7B-CAV" firstAttribute="top" secondItem="QDT-B8-3Ul" secondAttribute="bottom" constant="-5" id="fEn-yU-j6t"/>
+                            <constraint firstItem="yXP-Uw-tEQ" firstAttribute="top" secondItem="ZGp-xM-f4v" secondAttribute="bottom" constant="151" id="n56-y1-c8i"/>
+                            <constraint firstItem="d2a-dO-qvR" firstAttribute="leading" secondItem="QDT-B8-3Ul" secondAttribute="trailing" constant="-28" id="ojA-kN-5R6"/>
+                            <constraint firstItem="yXP-Uw-tEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="qqe-m1-I5l"/>
+                            <constraint firstItem="VLZ-7z-ohf" firstAttribute="leading" secondItem="ewp-bB-udH" secondAttribute="leading" id="u9X-1o-h8L"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pledge" id="FS4-88-AnU"/>
                     <connections>
-                        <outlet property="label" destination="snf-Zj-n6R" id="mgy-1A-0GD"/>
-                        <outlet property="mybutton" destination="87e-aC-biU" id="zcC-T6-tKB"/>
-                        <outlet property="textbox" destination="4uA-gv-KdX" id="gCp-Gj-BFP"/>
+                        <outlet property="pledgeLabel" destination="yXP-Uw-tEQ" id="KTU-zs-w1k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-347" y="371"/>
+            <point key="canvasLocation" x="-1050" y="-1242"/>
+        </scene>
+        <!--Standings-->
+        <scene sceneID="dkp-qU-HUD">
+            <objects>
+                <viewController title="Standings" id="Vm7-wJ-5er" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lyc-sH-Gae"/>
+                        <viewControllerLayoutGuide type="bottom" id="s81-46-CTi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l93-Id-tc7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Standings" id="H79-tL-4WQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GE5-Ma-0LB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1051" y="-583"/>
+        </scene>
+        <!--Points-->
+        <scene sceneID="bwm-1P-RME">
+            <objects>
+                <viewController title="Points" id="VZ7-K1-7Mx" customClass="PointsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="75N-hf-6uO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ib-GP-Ham"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7rb-M9-fB0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-op-dMX">
+                                <rect key="frame" x="279" y="144" width="42" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-1y-yfi">
+                                <rect key="frame" x="279" y="227" width="42" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-Y6-5e6">
+                                <rect key="frame" x="279" y="288" width="42" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-xX-YMG">
+                                <rect key="frame" x="279" y="435" width="42" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZA8-Y6-5e6" firstAttribute="top" secondItem="sVx-1y-yfi" secondAttribute="bottom" constant="38" id="0nl-Qp-jJv"/>
+                            <constraint firstItem="4Ib-GP-Ham" firstAttribute="top" secondItem="ba4-xX-YMG" secondAttribute="bottom" constant="93" id="2q0-ZG-evO"/>
+                            <constraint firstItem="ZA8-Y6-5e6" firstAttribute="centerY" secondItem="7rb-M9-fB0" secondAttribute="centerY" id="9Xq-XM-2tT"/>
+                            <constraint firstItem="sVx-1y-yfi" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="D8g-Wi-OmZ"/>
+                            <constraint firstItem="ZA8-Y6-5e6" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="KFl-aK-KpU"/>
+                            <constraint firstItem="0JD-op-dMX" firstAttribute="top" secondItem="75N-hf-6uO" secondAttribute="bottom" constant="124" id="MCE-GF-BBg"/>
+                            <constraint firstItem="0JD-op-dMX" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="TqZ-UK-vsf"/>
+                            <constraint firstItem="ba4-xX-YMG" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="pBF-hZ-C7X"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Points" id="ws8-rP-Duf"/>
+                    <connections>
+                        <outlet property="conversionLabel" destination="0JD-op-dMX" id="CPA-gf-QbM"/>
+                        <outlet property="pointsLabel" destination="ZA8-Y6-5e6" id="sNM-yk-keR"/>
+                        <outlet property="spendLabel" destination="ba4-xX-YMG" id="UFS-QR-25C"/>
+                        <outlet property="totalLabel" destination="sVx-1y-yfi" id="mmh-cW-YJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFt-8e-nyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1050" y="81"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oCi-OF-bBE">
+            <objects>
+                <tabBarController id="XXb-CA-8oe" customClass="TabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SSk-Hw-BDA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oDr-Hd-V70"/>
+                        <segue destination="Vm7-wJ-5er" kind="relationship" relationship="viewControllers" id="q0r-aR-3F8"/>
+                        <segue destination="VZ7-K1-7Mx" kind="relationship" relationship="viewControllers" id="q8o-4n-Hk6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmh-9h-GhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1902" y="-515"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PLEDGE2.png" width="640" height="960"/>
+    </resources>
 </document>

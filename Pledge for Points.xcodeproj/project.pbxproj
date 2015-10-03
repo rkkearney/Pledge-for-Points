@@ -15,6 +15,12 @@
 		B41AEE421BBF64020057CC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41AEE401BBF64020057CC6A /* LaunchScreen.storyboard */; };
 		B41AEE4D1BBF64020057CC6A /* Pledge_for_PointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE4C1BBF64020057CC6A /* Pledge_for_PointsTests.m */; };
 		B41AEE581BBF64020057CC6A /* Pledge_for_PointsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE571BBF64020057CC6A /* Pledge_for_PointsUITests.m */; };
+		B41AEEC11BC037380057CC6A /* StandingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEEC01BC037380057CC6A /* StandingsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B41AEEC41BC037440057CC6A /* PointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEEC31BC037440057CC6A /* PointsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B41AEEC71BC03B740057CC6A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEEC61BC03B740057CC6A /* TabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		B41AEEE71BC05D350057CC6A /* STANDINGS2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEE41BC05D350057CC6A /* STANDINGS2.png */; settings = {ASSET_TAGS = (); }; };
+		B41AEEE81BC05D350057CC6A /* PLEDGE2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEE51BC05D350057CC6A /* PLEDGE2.png */; settings = {ASSET_TAGS = (); }; };
+		B41AEEE91BC05D350057CC6A /* POINTS2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEE61BC05D350057CC6A /* POINTS2.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,15 @@
 		B41AEE531BBF64020057CC6A /* Pledge for PointsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pledge for PointsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41AEE571BBF64020057CC6A /* Pledge_for_PointsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pledge_for_PointsUITests.m; sourceTree = "<group>"; };
 		B41AEE591BBF64020057CC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41AEEBF1BC037380057CC6A /* StandingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandingsViewController.h; sourceTree = "<group>"; };
+		B41AEEC01BC037380057CC6A /* StandingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandingsViewController.m; sourceTree = "<group>"; };
+		B41AEEC21BC037440057CC6A /* PointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointsViewController.h; sourceTree = "<group>"; };
+		B41AEEC31BC037440057CC6A /* PointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsViewController.m; sourceTree = "<group>"; };
+		B41AEEC51BC03B740057CC6A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		B41AEEC61BC03B740057CC6A /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		B41AEEE41BC05D350057CC6A /* STANDINGS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = STANDINGS2.png; path = ../../../../Downloads/STANDINGS2.png; sourceTree = "<group>"; };
+		B41AEEE51BC05D350057CC6A /* PLEDGE2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PLEDGE2.png; path = ../../../../Downloads/PLEDGE2.png; sourceTree = "<group>"; };
+		B41AEEE61BC05D350057CC6A /* POINTS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = POINTS2.png; path = ../../../../Downloads/POINTS2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +116,20 @@
 		B41AEE311BBF64020057CC6A /* Pledge for Points */ = {
 			isa = PBXGroup;
 			children = (
+				B41AEEE41BC05D350057CC6A /* STANDINGS2.png */,
+				B41AEEE51BC05D350057CC6A /* PLEDGE2.png */,
+				B41AEEE61BC05D350057CC6A /* POINTS2.png */,
 				B41AEE351BBF64020057CC6A /* AppDelegate.h */,
 				B41AEE361BBF64020057CC6A /* AppDelegate.m */,
 				B41AEE381BBF64020057CC6A /* ViewController.h */,
 				B41AEE391BBF64020057CC6A /* ViewController.m */,
 				B41AEE3B1BBF64020057CC6A /* Main.storyboard */,
+				B41AEEC51BC03B740057CC6A /* TabBarController.h */,
+				B41AEEC61BC03B740057CC6A /* TabBarController.m */,
+				B41AEEBF1BC037380057CC6A /* StandingsViewController.h */,
+				B41AEEC01BC037380057CC6A /* StandingsViewController.m */,
+				B41AEEC21BC037440057CC6A /* PointsViewController.h */,
+				B41AEEC31BC037440057CC6A /* PointsViewController.m */,
 				B41AEE3E1BBF64020057CC6A /* Assets.xcassets */,
 				B41AEE401BBF64020057CC6A /* LaunchScreen.storyboard */,
 				B41AEE431BBF64020057CC6A /* Info.plist */,
@@ -245,7 +269,10 @@
 			files = (
 				B41AEE421BBF64020057CC6A /* LaunchScreen.storyboard in Resources */,
 				B41AEE3F1BBF64020057CC6A /* Assets.xcassets in Resources */,
+				B41AEEE81BC05D350057CC6A /* PLEDGE2.png in Resources */,
+				B41AEEE71BC05D350057CC6A /* STANDINGS2.png in Resources */,
 				B41AEE3D1BBF64020057CC6A /* Main.storyboard in Resources */,
+				B41AEEE91BC05D350057CC6A /* POINTS2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +299,9 @@
 			files = (
 				B41AEE3A1BBF64020057CC6A /* ViewController.m in Sources */,
 				B41AEE371BBF64020057CC6A /* AppDelegate.m in Sources */,
+				B41AEEC41BC037440057CC6A /* PointsViewController.m in Sources */,
+				B41AEEC71BC03B740057CC6A /* TabBarController.m in Sources */,
+				B41AEEC11BC037380057CC6A /* StandingsViewController.m in Sources */,
 				B41AEE341BBF64020057CC6A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
