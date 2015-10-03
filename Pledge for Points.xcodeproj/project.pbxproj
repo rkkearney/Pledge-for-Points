@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41AEE341BBF64020057CC6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE331BBF64020057CC6A /* main.m */; };
+		B41AEE371BBF64020057CC6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE361BBF64020057CC6A /* AppDelegate.m */; };
+		B41AEE3A1BBF64020057CC6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE391BBF64020057CC6A /* ViewController.m */; };
+		B41AEE3D1BBF64020057CC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41AEE3B1BBF64020057CC6A /* Main.storyboard */; };
+		B41AEE3F1BBF64020057CC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41AEE3E1BBF64020057CC6A /* Assets.xcassets */; };
+		B41AEE421BBF64020057CC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41AEE401BBF64020057CC6A /* LaunchScreen.storyboard */; };
+		B41AEE4D1BBF64020057CC6A /* Pledge_for_PointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE4C1BBF64020057CC6A /* Pledge_for_PointsTests.m */; };
+		B41AEE581BBF64020057CC6A /* Pledge_for_PointsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41AEE571BBF64020057CC6A /* Pledge_for_PointsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B41AEE491BBF64020057CC6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B41AEE271BBF64020057CC6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B41AEE2E1BBF64020057CC6A;
+			remoteInfo = "Pledge for Points";
+		};
+		B41AEE541BBF64020057CC6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B41AEE271BBF64020057CC6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B41AEE2E1BBF64020057CC6A;
+			remoteInfo = "Pledge for Points";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B41AEE2F1BBF64020057CC6A /* Pledge for Points.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pledge for Points.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41AEE331BBF64020057CC6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B41AEE351BBF64020057CC6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B41AEE361BBF64020057CC6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B41AEE381BBF64020057CC6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B41AEE391BBF64020057CC6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B41AEE3C1BBF64020057CC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B41AEE3E1BBF64020057CC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B41AEE411BBF64020057CC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B41AEE431BBF64020057CC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41AEE481BBF64020057CC6A /* Pledge for PointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pledge for PointsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41AEE4C1BBF64020057CC6A /* Pledge_for_PointsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pledge_for_PointsTests.m; sourceTree = "<group>"; };
+		B41AEE4E1BBF64020057CC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41AEE531BBF64020057CC6A /* Pledge for PointsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pledge for PointsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41AEE571BBF64020057CC6A /* Pledge_for_PointsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pledge_for_PointsUITests.m; sourceTree = "<group>"; };
+		B41AEE591BBF64020057CC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41AEE2C1BBF64020057CC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE451BBF64020057CC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE501BBF64020057CC6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41AEE261BBF64020057CC6A = {
+			isa = PBXGroup;
+			children = (
+				B41AEE311BBF64020057CC6A /* Pledge for Points */,
+				B41AEE4B1BBF64020057CC6A /* Pledge for PointsTests */,
+				B41AEE561BBF64020057CC6A /* Pledge for PointsUITests */,
+				B41AEE301BBF64020057CC6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B41AEE301BBF64020057CC6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41AEE2F1BBF64020057CC6A /* Pledge for Points.app */,
+				B41AEE481BBF64020057CC6A /* Pledge for PointsTests.xctest */,
+				B41AEE531BBF64020057CC6A /* Pledge for PointsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41AEE311BBF64020057CC6A /* Pledge for Points */ = {
+			isa = PBXGroup;
+			children = (
+				B41AEE351BBF64020057CC6A /* AppDelegate.h */,
+				B41AEE361BBF64020057CC6A /* AppDelegate.m */,
+				B41AEE381BBF64020057CC6A /* ViewController.h */,
+				B41AEE391BBF64020057CC6A /* ViewController.m */,
+				B41AEE3B1BBF64020057CC6A /* Main.storyboard */,
+				B41AEE3E1BBF64020057CC6A /* Assets.xcassets */,
+				B41AEE401BBF64020057CC6A /* LaunchScreen.storyboard */,
+				B41AEE431BBF64020057CC6A /* Info.plist */,
+				B41AEE321BBF64020057CC6A /* Supporting Files */,
+			);
+			path = "Pledge for Points";
+			sourceTree = "<group>";
+		};
+		B41AEE321BBF64020057CC6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41AEE331BBF64020057CC6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41AEE4B1BBF64020057CC6A /* Pledge for PointsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B41AEE4C1BBF64020057CC6A /* Pledge_for_PointsTests.m */,
+				B41AEE4E1BBF64020057CC6A /* Info.plist */,
+			);
+			path = "Pledge for PointsTests";
+			sourceTree = "<group>";
+		};
+		B41AEE561BBF64020057CC6A /* Pledge for PointsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B41AEE571BBF64020057CC6A /* Pledge_for_PointsUITests.m */,
+				B41AEE591BBF64020057CC6A /* Info.plist */,
+			);
+			path = "Pledge for PointsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41AEE2E1BBF64020057CC6A /* Pledge for Points */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41AEE5C1BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for Points" */;
+			buildPhases = (
+				B41AEE2B1BBF64020057CC6A /* Sources */,
+				B41AEE2C1BBF64020057CC6A /* Frameworks */,
+				B41AEE2D1BBF64020057CC6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pledge for Points";
+			productName = "Pledge for Points";
+			productReference = B41AEE2F1BBF64020057CC6A /* Pledge for Points.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B41AEE471BBF64020057CC6A /* Pledge for PointsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41AEE5F1BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsTests" */;
+			buildPhases = (
+				B41AEE441BBF64020057CC6A /* Sources */,
+				B41AEE451BBF64020057CC6A /* Frameworks */,
+				B41AEE461BBF64020057CC6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41AEE4A1BBF64020057CC6A /* PBXTargetDependency */,
+			);
+			name = "Pledge for PointsTests";
+			productName = "Pledge for PointsTests";
+			productReference = B41AEE481BBF64020057CC6A /* Pledge for PointsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B41AEE521BBF64020057CC6A /* Pledge for PointsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41AEE621BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsUITests" */;
+			buildPhases = (
+				B41AEE4F1BBF64020057CC6A /* Sources */,
+				B41AEE501BBF64020057CC6A /* Frameworks */,
+				B41AEE511BBF64020057CC6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41AEE551BBF64020057CC6A /* PBXTargetDependency */,
+			);
+			name = "Pledge for PointsUITests";
+			productName = "Pledge for PointsUITests";
+			productReference = B41AEE531BBF64020057CC6A /* Pledge for PointsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41AEE271BBF64020057CC6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Reilly Kearney";
+				TargetAttributes = {
+					B41AEE2E1BBF64020057CC6A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B41AEE471BBF64020057CC6A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B41AEE2E1BBF64020057CC6A;
+					};
+					B41AEE521BBF64020057CC6A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B41AEE2E1BBF64020057CC6A;
+					};
+				};
+			};
+			buildConfigurationList = B41AEE2A1BBF64020057CC6A /* Build configuration list for PBXProject "Pledge for Points" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B41AEE261BBF64020057CC6A;
+			productRefGroup = B41AEE301BBF64020057CC6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41AEE2E1BBF64020057CC6A /* Pledge for Points */,
+				B41AEE471BBF64020057CC6A /* Pledge for PointsTests */,
+				B41AEE521BBF64020057CC6A /* Pledge for PointsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41AEE2D1BBF64020057CC6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41AEE421BBF64020057CC6A /* LaunchScreen.storyboard in Resources */,
+				B41AEE3F1BBF64020057CC6A /* Assets.xcassets in Resources */,
+				B41AEE3D1BBF64020057CC6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE461BBF64020057CC6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE511BBF64020057CC6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41AEE2B1BBF64020057CC6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41AEE3A1BBF64020057CC6A /* ViewController.m in Sources */,
+				B41AEE371BBF64020057CC6A /* AppDelegate.m in Sources */,
+				B41AEE341BBF64020057CC6A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE441BBF64020057CC6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41AEE4D1BBF64020057CC6A /* Pledge_for_PointsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41AEE4F1BBF64020057CC6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41AEE581BBF64020057CC6A /* Pledge_for_PointsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B41AEE4A1BBF64020057CC6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B41AEE2E1BBF64020057CC6A /* Pledge for Points */;
+			targetProxy = B41AEE491BBF64020057CC6A /* PBXContainerItemProxy */;
+		};
+		B41AEE551BBF64020057CC6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B41AEE2E1BBF64020057CC6A /* Pledge for Points */;
+			targetProxy = B41AEE541BBF64020057CC6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B41AEE3B1BBF64020057CC6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41AEE3C1BBF64020057CC6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B41AEE401BBF64020057CC6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41AEE411BBF64020057CC6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B41AEE5A1BBF64020057CC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B41AEE5B1BBF64020057CC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B41AEE5D1BBF64020057CC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pledge for Points/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-Points";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B41AEE5E1BBF64020057CC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pledge for Points/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-Points";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B41AEE601BBF64020057CC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pledge for PointsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-PointsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pledge for Points.app/Pledge for Points";
+			};
+			name = Debug;
+		};
+		B41AEE611BBF64020057CC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Pledge for PointsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-PointsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pledge for Points.app/Pledge for Points";
+			};
+			name = Release;
+		};
+		B41AEE631BBF64020057CC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pledge for PointsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-PointsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pledge for Points";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B41AEE641BBF64020057CC6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Pledge for PointsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "att-nd-hackathon.Pledge-for-PointsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Pledge for Points";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41AEE2A1BBF64020057CC6A /* Build configuration list for PBXProject "Pledge for Points" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41AEE5A1BBF64020057CC6A /* Debug */,
+				B41AEE5B1BBF64020057CC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41AEE5C1BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for Points" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41AEE5D1BBF64020057CC6A /* Debug */,
+				B41AEE5E1BBF64020057CC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B41AEE5F1BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41AEE601BBF64020057CC6A /* Debug */,
+				B41AEE611BBF64020057CC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B41AEE621BBF64020057CC6A /* Build configuration list for PBXNativeTarget "Pledge for PointsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41AEE631BBF64020057CC6A /* Debug */,
+				B41AEE641BBF64020057CC6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41AEE271BBF64020057CC6A /* Project object */;
+}
