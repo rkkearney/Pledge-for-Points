@@ -128,26 +128,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-op-dMX">
-                                <rect key="frame" x="279" y="144" width="42" height="23"/>
-                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 miles = 1 point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JD-op-dMX">
+                                <rect key="frame" x="155" y="144" width="291" height="46"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-1y-yfi">
-                                <rect key="frame" x="279" y="227" width="42" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Total Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-1y-yfi">
+                                <rect key="frame" x="234" y="228" width="132" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-Y6-5e6">
-                                <rect key="frame" x="279" y="288" width="42" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-Y6-5e6">
+                                <rect key="frame" x="229" y="289" width="137" height="25"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-xX-YMG">
-                                <rect key="frame" x="279" y="435" width="42" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to spend?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-xX-YMG">
+                                <rect key="frame" x="239" y="435" width="123" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -162,13 +162,14 @@
                             <constraint firstItem="ZA8-Y6-5e6" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="KFl-aK-KpU"/>
                             <constraint firstItem="0JD-op-dMX" firstAttribute="top" secondItem="75N-hf-6uO" secondAttribute="bottom" constant="124" id="MCE-GF-BBg"/>
                             <constraint firstItem="0JD-op-dMX" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="TqZ-UK-vsf"/>
+                            <constraint firstItem="ZA8-Y6-5e6" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="UEq-ay-frB"/>
                             <constraint firstItem="ba4-xX-YMG" firstAttribute="centerX" secondItem="7rb-M9-fB0" secondAttribute="centerX" id="pBF-hZ-C7X"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Points" id="ws8-rP-Duf"/>
                     <connections>
                         <outlet property="conversionLabel" destination="0JD-op-dMX" id="CPA-gf-QbM"/>
-                        <outlet property="pointsLabel" destination="ZA8-Y6-5e6" id="sNM-yk-keR"/>
+                        <outlet property="pointsLabel" destination="ZA8-Y6-5e6" id="Q3u-tH-i78"/>
                         <outlet property="spendLabel" destination="ba4-xX-YMG" id="UFS-QR-25C"/>
                         <outlet property="totalLabel" destination="sVx-1y-yfi" id="mmh-cW-YJg"/>
                     </connections>

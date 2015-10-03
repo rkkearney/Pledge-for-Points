@@ -9,11 +9,7 @@
 #import "PointsViewController.h"
 
 @interface PointsViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *conversionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *spendLabel;
-
 
 @end
 
@@ -22,14 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.conversionLabel sizeToFit];
-    self.conversionLabel.text = @"25 miles = 1 point";
-    [self.totalLabel sizeToFit];
-    self.totalLabel.text = @"Your total points:";
-    [self.pointsLabel sizeToFit];
-    self.pointsLabel.text = @"0";
-    [self.spendLabel sizeToFit];
-    self.spendLabel.text = @"Want to spend?";
 }
 
 - (void)didReceiveMemoryWarning {
