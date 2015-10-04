@@ -150,7 +150,50 @@
                     <view key="view" contentMode="scaleToFill" id="l93-Id-tc7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="STANDINGS2.png" translatesAutoresizingMaskIntoConstraints="NO" id="O23-j0-Pxj">
+                                <rect key="frame" x="-12" y="-46" width="628" height="729"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Update:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiS-do-kEe">
+                                <rect key="frame" x="130" y="109" width="314" height="66"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standings Amongst Friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy5-Ll-BOv">
+                                <rect key="frame" x="128" y="171" width="344" height="63"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jwb-3s-Lyx">
+                                <rect key="frame" x="182" y="242" width="236" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="6Yx-PF-NbJ"/>
+                                </constraints>
+                                <string key="text">This tab will show you where you stack up against your friends! Compare your total mileage and earn bragging rights amongst your friends! Keep using the app to gain more miles and "drive" your friends into the ground!</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kiS-do-kEe" firstAttribute="centerX" secondItem="l93-Id-tc7" secondAttribute="centerX" id="5fJ-jY-TGR"/>
+                            <constraint firstItem="s81-46-CTi" firstAttribute="top" secondItem="Jwb-3s-Lyx" secondAttribute="bottom" constant="114" id="7eh-Uz-lzn"/>
+                            <constraint firstItem="Jwb-3s-Lyx" firstAttribute="centerX" secondItem="l93-Id-tc7" secondAttribute="centerX" id="HKk-BI-K62"/>
+                            <constraint firstItem="Jwb-3s-Lyx" firstAttribute="top" secondItem="wy5-Ll-BOv" secondAttribute="bottom" constant="8" id="Je3-pE-Il4"/>
+                            <constraint firstItem="s81-46-CTi" firstAttribute="top" secondItem="wy5-Ll-BOv" secondAttribute="bottom" constant="317" id="RQL-JD-FM7"/>
+                            <constraint firstItem="s81-46-CTi" firstAttribute="top" secondItem="kiS-do-kEe" secondAttribute="bottom" constant="376" id="ekq-To-3ee"/>
+                            <constraint firstItem="wy5-Ll-BOv" firstAttribute="top" secondItem="kiS-do-kEe" secondAttribute="bottom" constant="-4" id="gD3-JO-7Tz"/>
+                            <constraint firstItem="Jwb-3s-Lyx" firstAttribute="centerX" secondItem="kiS-do-kEe" secondAttribute="centerX" constant="13" id="lTo-rv-iYm"/>
+                            <constraint firstItem="wy5-Ll-BOv" firstAttribute="centerX" secondItem="kiS-do-kEe" secondAttribute="centerX" constant="13" id="p6C-9J-nuW"/>
+                            <constraint firstItem="wy5-Ll-BOv" firstAttribute="centerX" secondItem="l93-Id-tc7" secondAttribute="centerX" id="yPX-kX-rzd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5fJ-jY-TGR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Standings" id="H79-tL-4WQ"/>
                 </viewController>
@@ -274,6 +317,7 @@
     <resources>
         <image name="PLEDGE2.png" width="640" height="960"/>
         <image name="POINTS2.png" width="640" height="960"/>
+        <image name="STANDINGS2.png" width="640" height="960"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Vu-Cf-J6w"/>
