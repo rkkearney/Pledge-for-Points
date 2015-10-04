@@ -9,5 +9,6 @@
 #import "ViewController.h"
 
 @interface PointsViewController : ViewController
+@property (nonatomic, assign) double miles;
 
 @end

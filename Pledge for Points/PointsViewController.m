@@ -10,14 +10,21 @@
 
 @interface PointsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *pointsLabel;
-
+- (IBAction)spendButton:(id)sender;
 @end
 
 @implementation PointsViewController
 
+//double milestravelled;
+int points;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // [super];
     // Do any additional setup after loading the view.
+    points += self.miles;
+    self.pointsLabel.text = [NSString stringWithFormat:@"%i", points];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,5 +41,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)spendButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.plenti.com"]];
+}
+
 
 @end

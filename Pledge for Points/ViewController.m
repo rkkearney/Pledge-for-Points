@@ -8,24 +8,55 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "PointsViewController.h"
+@interface ViewController () <CLLocationManagerDelegate>
 
-@interface ViewController ()
 - (IBAction)drivingSwitch:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *pledgeLabel;
 @property (assign, nonatomic, nullable) id< CLLocationManagerDelegate > delegate;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UISwitch *switch1;
+- (IBAction)pledgeButton:(id)sender;
 
 @end
 
 @implementation ViewController
 
 double distance = 0.0;
+//double oldlocation = 0.0;
 CLLocation* oldlocation;
+//CLLocation* location = [CL];
+double milestravelled;
+
+- (IBAction)drivingSwitch:(id)sender {
+    if ([self.switch1 isOn]) {
+        
+        if ([CLLocationManager significantLocationChangeMonitoringAvailable]) {
+            [self startSignificantChangeUpdates];
+        }
+        //oldlocation = location;
+    
+    }
+    else {
+        
+        if ([CLLocationManager significantLocationChangeMonitoringAvailable]) {
+            [self stopSignificantChangeUpdates];
+        }
+        
+        double mileconvert = 0.000621371192;
+        milestravelled = (distance * mileconvert);
+        NSLog(@"miles traveled: %+.6f", milestravelled);
+        distance = 0.0;
+        oldlocation = NULL;
+        [self performSegueWithIdentifier:@"seguewaytopoints" sender:self];
+    }
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
     if (nil == self.locationManager)
         self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -40,9 +71,6 @@ CLLocation* oldlocation;
         [self.locationManager requestAlwaysAuthorization];
     }
     
-    if ([CLLocationManager significantLocationChangeMonitoringAvailable]) {
-        [self startSignificantChangeUpdates];
-    }
     
     // [self startSignificantChangeUpdates];
 }
@@ -58,6 +86,13 @@ CLLocation* oldlocation;
     // already have one.
     
     [self.locationManager startMonitoringSignificantLocationChanges];
+}
+
+- (void)stopSignificantChangeUpdates
+{
+    [self.locationManager
+     stopMonitoringSignificantLocationChanges];
+    
 }
 
 // Delegate method from the CLLocationManagerDelegate protocol.
@@ -81,16 +116,22 @@ CLLocation* oldlocation;
         }
     }
     oldlocation = location;
-    
+    milestravelled =10;
 }
 
-- (double) meterstomiles: (double) meters {
-    double mileconvert = 0.000621371192;
-    return meters * mileconvert;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"seguewaytopoints"]) {
+        PointsViewController *myVC = [segue destinationViewController];
+        myVC.miles = milestravelled;
+    }
+   
 }
 
 
-- (IBAction)drivingSwitch:(id)sender {
+
+- (IBAction)pledgeButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.itcanwait.com/all"]];
 }
 @end
 

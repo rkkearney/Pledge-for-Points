@@ -22,6 +22,7 @@
 		B41AEEED1BC0741A0057CC6A /* STANDINGS2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEEA1BC0741A0057CC6A /* STANDINGS2.png */; settings = {ASSET_TAGS = (); }; };
 		B41AEEEE1BC0741A0057CC6A /* PLEDGE2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEEB1BC0741A0057CC6A /* PLEDGE2.png */; settings = {ASSET_TAGS = (); }; };
 		B41AEEEF1BC0741A0057CC6A /* POINTS2.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEEC1BC0741A0057CC6A /* POINTS2.png */; settings = {ASSET_TAGS = (); }; };
+		B41AEEF11BC0946C0057CC6A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B41AEEF01BC0946C0057CC6A /* Icon.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B41AEEEA1BC0741A0057CC6A /* STANDINGS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = STANDINGS2.png; path = ../STANDINGS2.png; sourceTree = "<group>"; };
 		B41AEEEB1BC0741A0057CC6A /* PLEDGE2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PLEDGE2.png; path = ../PLEDGE2.png; sourceTree = "<group>"; };
 		B41AEEEC1BC0741A0057CC6A /* POINTS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = POINTS2.png; path = ../POINTS2.png; sourceTree = "<group>"; };
+		B41AEEF01BC0946C0057CC6A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B41AEE261BBF64020057CC6A = {
 			isa = PBXGroup;
 			children = (
+				B41AEEF01BC0946C0057CC6A /* Icon.png */,
 				7AA1A0281BC074EC00031518 /* CoreLocation.framework */,
 				B41AEE311BBF64020057CC6A /* Pledge for Points */,
 				B41AEE4B1BBF64020057CC6A /* Pledge for PointsTests */,
@@ -276,6 +279,7 @@
 				B41AEE3F1BBF64020057CC6A /* Assets.xcassets in Resources */,
 				B41AEEED1BC0741A0057CC6A /* STANDINGS2.png in Resources */,
 				B41AEE3D1BBF64020057CC6A /* Main.storyboard in Resources */,
+				B41AEEF11BC0946C0057CC6A /* Icon.png in Resources */,
 				B41AEEEF1BC0741A0057CC6A /* POINTS2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
